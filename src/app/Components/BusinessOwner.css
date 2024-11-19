@@ -1,0 +1,23 @@
+/* General Styling */
+.business-owner-container {
+    font-family: "Arial", sans-serif;
+    background-color: #f9fafb; /* Light gray background for a clean look */
+  }
+  
+  /* Gradient Headers */
+  h1 {
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Styling */
+  img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  

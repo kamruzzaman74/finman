@@ -1,0 +1,49 @@
+/* Title Gradient Effect with Subtle Shadow */
+.shadow-title {
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  border: 2px solid #ffd700;
+}
+
+/* Decorative Background Shapes */
+body {
+  background: linear-gradient(to bottom, #fefce8, #fff5db);
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.bg-decor {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  z-index: -1;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Global Smooth Transition */
+* {
+  transition: all 0.3s ease;
+}

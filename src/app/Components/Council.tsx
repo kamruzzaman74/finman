@@ -1,7 +1,8 @@
 'use client';
 import React from 'react';
 import { FaBuilding, FaHome, FaCalendarAlt, FaPhoneAlt } from 'react-icons/fa';
-import Link from 'next/link'; // Import Link for navigation
+import Link from 'next/link';
+import Image from 'next/image'; // Import Image from next/image
 
 const FinancialCounseling: React.FC = () => {
   return (
@@ -19,9 +20,11 @@ const FinancialCounseling: React.FC = () => {
       {/* Image Section */}
       <div className="flex justify-center mb-16">
         <div className="relative w-full max-w-lg rounded-3xl overflow-hidden shadow-xl">
-          <img
+          <Image
             src="/nn.jpg"
             alt="Financial Planning in Dhaka"
+            width={800} // Specify the width
+            height={480} // Specify the height
             className="w-full h-72 object-cover hover:scale-110 transform transition duration-500"
           />
         </div>

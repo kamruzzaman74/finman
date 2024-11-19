@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaHandshake, FaChartLine, FaRegBuilding, FaRegMoneyBillAlt } from 'react-icons/fa';
+import Image from 'next/image'; // Import Image from next/image
 import 'animate.css'; // Ensure animate.css is imported
 
 const AboutUs: React.FC = () => {
@@ -9,10 +10,13 @@ const AboutUs: React.FC = () => {
     <div className="bg-gradient-to-b from-indigo-50 to-blue-100 py-16 sm:py-20 md:py-24 px-6 sm:px-12 lg:px-24">
       {/* Hero Section */}
       <div className="relative mb-16 sm:mb-20">
-        <img
-          src="k.jpg.png" // Adjust image size here
+        <Image
+          src="/k.jpg.png" // Use absolute path or a public folder image
           alt="Finman Hero Image"
+          width={1200} // Provide explicit width
+          height={400} // Provide explicit height
           className="w-full h-[200px] sm:h-[300px] lg:h-[350px] object-cover rounded-2xl shadow-xl transform hover:scale-105 transition duration-500 ease-in-out"
+          priority // Ensures this image is loaded first for better performance
         />
         <div className="absolute inset-0 bg-black opacity-25 rounded-2xl"></div>
         <div className="absolute inset-0 flex items-center justify-center text-center text-white z-10 px-4">

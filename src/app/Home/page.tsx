@@ -1,8 +1,9 @@
 'use client';
 
-import React from "react";
-import Navbar from "../Components/Navbar";
-import "./anni.css";
+import React from 'react';
+import Navbar from '../Components/Navbar';
+import Image from 'next/image'; // Importing Next.js Image component
+import './anni.css';
 
 const Page = () => {
   return (
@@ -15,7 +16,7 @@ const Page = () => {
         {/* Text Section */}
         <div className="text-center lg:text-left lg:max-w-lg">
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 leading-snug tracking-wide">
-            Discover Financial Freedom with{" "}
+            Discover Financial Freedom with{' '}
             <span className="text-yellow-500">FinmanBD</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mt-4 leading-relaxed">
@@ -26,9 +27,11 @@ const Page = () => {
 
         {/* Image Section */}
         <div className="mt-10 lg:mt-0 lg:ml-10 flex-shrink-0">
-          <img
+          <Image
             src="/aa.jpg"
             alt="Finance Hero"
+            width={600}
+            height={400}
             className="rounded-lg shadow-xl w-full max-w-md lg:max-w-lg object-cover"
           />
         </div>
@@ -37,8 +40,8 @@ const Page = () => {
       {/* Quote Section */}
       <div className="mt-16 w-full max-w-4xl text-center">
         <blockquote className="text-2xl md:text-3xl font-semibold text-gray-700 italic">
-          "Financial success is not just a goal; it’s a journey. Let Finman be
-          your trusted companion along the way."
+          &quot;Financial success is not just a goal; it’s a journey. Let Finman be
+          your trusted companion along the way.&quot;
         </blockquote>
         <p className="text-gray-500 text-lg mt-4">- The Finman Team</p>
       </div>
@@ -52,24 +55,24 @@ const Page = () => {
           {/* Testimonial 1 */}
           <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <p className="text-gray-600 italic">
-              "Finman transformed the way I manage my finances. Their expertise
-              is unparalleled!"
+              &quot;Finman transformed the way I manage my finances. Their expertise
+              is unparalleled!&quot;
             </p>
             <p className="text-gray-800 font-bold mt-4">- Sarah J.</p>
           </div>
           {/* Testimonial 2 */}
           <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <p className="text-gray-600 italic">
-              "Thanks to Finman, I’ve achieved financial clarity and can focus
-              on growing my business."
+              &quot;Thanks to Finman, I’ve achieved financial clarity and can focus
+              on growing my business.&quot;
             </p>
             <p className="text-gray-800 font-bold mt-4">- David R.</p>
           </div>
           {/* Testimonial 3 */}
           <div className="p-6 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <p className="text-gray-600 italic">
-              "Professional, reliable, and always supportive. Highly recommend
-              Finman!"
+              &quot;Professional, reliable, and always supportive. Highly recommend
+              Finman!&quot;
             </p>
             <p className="text-gray-800 font-bold mt-4">- Emily T.</p>
           </div>
@@ -79,7 +82,7 @@ const Page = () => {
       {/* Footer Section */}
       <div className="mt-20 w-full bg-gray-900 text-white py-8 text-center rounded-lg">
         <p className="text-lg">
-          Ready to take control of your finances?{" "}
+          Ready to take control of your finances?{' '}
           <span className="text-yellow-500">Contact us today!</span>
         </p>
       </div>

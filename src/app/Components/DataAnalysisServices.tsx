@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { FaChartBar, FaDatabase, FaTools, FaUserShield, FaRegChartBar } from 'react-icons/fa';
+import Image from 'next/image'; // Import Image from next/image
 
 const DataAnalysisServices: React.FC = () => {
   return (
@@ -19,9 +20,11 @@ const DataAnalysisServices: React.FC = () => {
       <div className="relative w-full flex justify-center mb-16">
         <div className="absolute top-0 left-0 right-0 -z-10 bg-gradient-to-r from-yellow-500 via-pink-400 to-red-400 h-full rounded-xl"></div>
         <div className="relative w-full max-w-4xl rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-          <img
+          <Image
             src="/tt.webp"
             alt="Data Analysis in FinTech"
+            width={800} // Specify the width
+            height={450} // Specify the height
             className="w-full h-[450px] object-cover transition-transform duration-500 hover:scale-110 rounded-2xl"
           />
           <div className="absolute bottom-4 left-6 text-white bg-gradient-to-t from-black via-transparent to-transparent opacity-60 p-4 rounded-xl">
@@ -85,7 +88,7 @@ const DataAnalysisServices: React.FC = () => {
           Let Data Drive Your FinTech Success
         </h2>
         <p className="mt-6 text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
-          From real-time decision-making to securing financial operations, data analysis is the backbone of innovation in FinTech. Discover what's possible today!
+          From real-time decision-making to securing financial operations, data analysis is the backbone of innovation in FinTech. Discover what&apos;s possible today!
         </p>
       </div>
     </div>

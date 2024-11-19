@@ -24,8 +24,8 @@ const Footer: React.FC = () => {
           </h3>
           <ul className="space-y-3">
             {[
-              { name: 'About Us', path: '/About' }, // Updated About Us link
-              { name: 'Sign In', path: '/sign' }, // Updated Sign In link
+              { name: 'About Us', path: '/About' },
+              { name: 'Sign In', path: '/sign' },
             ].map(({ name, path }) => (
               <li key={name}>
                 <a
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} GrowMore19. All rights reserved.
         </p>
         <p className="text-yellow-300 font-bold mt-2">
-          "Empowering Financial Success Worldwide"
+          &quot;Empowering Financial Success Worldwide&quot;
         </p>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image'; // Import Image from next/image
 import { FaChartLine, FaShieldAlt, FaMoneyBillWave } from 'react-icons/fa';
 
 const CorporateOfficeFintech: React.FC = () => {
@@ -10,10 +11,13 @@ const CorporateOfficeFintech: React.FC = () => {
         {/* Image Section */}
         <div className="lg:w-1/2 w-full flex justify-center">
           <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-            <img
-              src="/hh.png"
+            <Image
+              src="/hh.png" // Ensure this image exists in the `public` folder
               alt="Corporate FinTech Solutions"
-              className="w-full h-full object-cover"
+              width={600} // Specify width
+              height={400} // Specify height
+              className="object-cover"
+              priority // Load as a priority image for LCP
             />
           </div>
         </div>
@@ -81,17 +85,20 @@ const CorporateOfficeFintech: React.FC = () => {
           <ul className="list-disc list-inside text-gray-700 text-base sm:text-lg space-y-4">
             <li>Real-time analytics for Dhaka-based trading firms.</li>
             <li>Secure payment gateways tailored for local businesses.</li>
-            <li>Automated billing solutions for SMEs in Dhaka's tech industry.</li>
+            <li>Automated billing solutions for SMEs in Dhaka&apos;s tech industry.</li>
           </ul>
         </div>
 
         {/* Image Section */}
         <div className="flex justify-center">
           <div className="rounded-3xl overflow-hidden shadow-lg border border-gray-200">
-            <img
-              src="/kkkk.jpg"
+            <Image
+              src="/kkkk.jpg" // Ensure this image exists in the `public` folder
               alt="Dhaka Financial Solutions"
-              className="w-full h-full object-cover"
+              width={600} // Specify width
+              height={400} // Specify height
+              className="object-cover"
+              priority // Load as a priority image for LCP
             />
           </div>
         </div>
@@ -101,9 +108,3 @@ const CorporateOfficeFintech: React.FC = () => {
 };
 
 export default CorporateOfficeFintech;
-
-
-
-
-
-

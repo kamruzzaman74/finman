@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image"; // Import the Image component
 import "./BusinessOwner.css";
 
 const BusinessOwner = () => {
@@ -21,10 +22,13 @@ const BusinessOwner = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left Side - Image Section */}
           <div className="relative flex-shrink-0 w-full lg:w-1/2">
-            <img
-              src="/oo.jpg"
+            <Image
+              src="/oo.jpg" // Path to the image
               alt="Business Solutions"
+              width={600} // Specify the width
+              height={400} // Specify the height
               className="rounded-lg shadow-lg w-full"
+              priority // Load this image first for better performance
             />
           </div>
 
@@ -60,4 +64,3 @@ const BusinessOwner = () => {
 };
 
 export default BusinessOwner;
-
